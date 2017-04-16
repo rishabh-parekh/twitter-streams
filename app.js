@@ -21,12 +21,16 @@ var client = new twitter({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET|| nconf.get('TWITTER_ACCESS_TOKEN_SECRET')
 });
 
+client.get('search/tweets', {q: 'detroit'}, function(error, tweets, response) {
+   console.log(tweets);
+});
+
 
 /**
  * Stream statuses filtered by keyword
  * number of tweets per second depends on topic popularity
  **/
-client.stream('statuses/filter', {track: 'twitter'},  function(stream) {
+client.stream('statuses/filter', {track: 'entrepreneur'},  function(stream) {
   stream.on('data', function(tweet) {
     console.log(tweet.text);
   });
@@ -35,6 +39,7 @@ client.stream('statuses/filter', {track: 'twitter'},  function(stream) {
     console.log(error);
   });
 });
+
 
 
 
