@@ -4,7 +4,15 @@
   "description": "Stream Twitter Data ",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+  "dependencies": {
+    "express": "5.0.0-alpha.5",
+    "socket.io": "1.7.3",
+    "twitter": "1.7.0",
+    "nconf" : "0.8.4"
   },
   "author": "",
   "license": "ISC"
