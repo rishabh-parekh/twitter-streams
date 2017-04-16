@@ -4,13 +4,13 @@ Program to get Search and Streaming Data from Twitter
 ## Steps to get started
 1. Git Clone this repository
 
-    `git clone git@github.com:rishabh-parekh/twitter-streams.git`
+        git clone git@github.com:rishabh-parekh/twitter-streams.git
 
 2. Open the folder in Editor like Atom
 
-    `cd twitter-streams`
+        cd twitter-streams
 
-    `atom .`
+        atom .
 
 3. Get the Twitter API Keys from twitter
 
@@ -22,29 +22,29 @@ Program to get Search and Streaming Data from Twitter
 
 4. Create a config.json file with the following content
 
-        `{
+        {
         	"TWITTER_CONSUMER_KEY": "",
         	"TWITTER_CONSUMER_SECRET": "",
         	"TWITTER_ACCESS_TOKEN_KEY": "",
         	"TWITTER_ACCESS_TOKEN_SECRET": ""
-        }`
+        }
 
     Copy your Consumer Key, Consumer Secret, Access Token, Access Token Secret from the Twitter Page
 
 4. Install the Npm dependencies
 
-        `npm install`
+        npm install
 
 5. Start the Sample app and watch the terminal window
 
-        `npm start`
+        npm start
 
 6. Open the app.js in atom and change the Query String from `Detroit` to something else
 
-    `client.get('search/tweets', {q: 'detroit'}, function(error, tweets, response) {`
+        client.get('search/tweets', {q: 'detroit'}, function(error, tweets, response) {
 
 7. Change the Streaming Query, the tracking query from `entrepreneur` to something else
 
-     `client.stream('statuses/filter', {track: 'entrepreneur'},  function(stream) {`
+        client.stream('statuses/filter', {track: 'entrepreneur'},  function(stream) {
 
 8. Save the file, and watch the terminal window.
