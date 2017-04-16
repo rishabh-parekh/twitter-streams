@@ -9,34 +9,35 @@ Program to get Search and Streaming Data from Twitter
 2. Open the folder in Editor like Atom
 
     `cd twitter-streams`
+
     `atom .`
 
 3. Get the Twitter API Keys from twitter
 
-     a. https://apps.twitter.com/
-     b. Create a new app, example : 'RP-Twitter-Streams'
-     c. Put the description and a dummy URL
-     d. Click on Keys and Access Tokens
-     e. Under Access Tokens click Create my access tokens
+        a. https://apps.twitter.com/
+        b. Create a new app, example : 'RP-Twitter-Streams'
+        c. Put the description and a dummy URL
+        d. Click on Keys and Access Tokens
+        e. Under Access Tokens click Create my access tokens
 
 4. Create a config.json file with the following content
 
-    `{
-    	"TWITTER_CONSUMER_KEY": "",
-    	"TWITTER_CONSUMER_SECRET": "",
-    	"TWITTER_ACCESS_TOKEN_KEY": "",
-    	"TWITTER_ACCESS_TOKEN_SECRET": ""
-    }`
+        `{
+        	"TWITTER_CONSUMER_KEY": "",
+        	"TWITTER_CONSUMER_SECRET": "",
+        	"TWITTER_ACCESS_TOKEN_KEY": "",
+        	"TWITTER_ACCESS_TOKEN_SECRET": ""
+        }`
 
     Copy your Consumer Key, Consumer Secret, Access Token, Access Token Secret from the Twitter Page
 
 4. Install the Npm dependencies
 
-    `npm install`
+        `npm install`
 
 5. Start the Sample app and watch the terminal window
 
-    `npm start`
+        `npm start`
 
 6. Open the app.js in atom and change the Query String from `Detroit` to something else
 
